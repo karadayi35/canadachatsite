@@ -35,8 +35,10 @@ function Chat() {
   };
 
   useEffect(() => {
-    const websocket = new WebSocket("ws://localhost:9000");
-    setWs(websocket);
+     // .env dosyasındaki REACT_APP_WS_URL değişkeninden WebSocket URL'sini alın
+     const websocketUrl = process.env.REACT_APP_WS_URL || "ws://localhost:9000";
+     const websocket = new WebSocket(websocketUrl);
+     setWs(websocket);
 
     websocket.onmessage = (event) => {
       const data = JSON.parse(event.data);
@@ -48,7 +50,9 @@ function Chat() {
         };
 
         setMessages((prevMessages) => [...prevMessages, updatedMessage]);
-
+        websocket.onclose = () => {
+          console.log("WebSocket connection closed");
+        };
         // Mesaj geldiğinde sesi çal
         messageSound.current.play().catch((error) => {
           console.error("Audio playback error:", error);
