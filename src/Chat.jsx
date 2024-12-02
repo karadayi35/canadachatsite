@@ -36,7 +36,7 @@ function Chat() {
 
   useEffect(() => {
      // .env dosyasındaki REACT_APP_WS_URL değişkeninden WebSocket URL'sini alın
-     const websocketUrl = process.env.REACT_APP_WS_URL || "ws://localhost:9000";
+     const websocketUrl = "wss://canada.kingcrashpredictor.com";
      const websocket = new WebSocket(websocketUrl);
      setWs(websocket);
 
