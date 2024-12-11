@@ -18,9 +18,9 @@ body, html {
 
 .header {
     background-color: #2c3e50;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .header h1 {
@@ -44,8 +44,8 @@ body, html {
     background-color: #1e272e;
     border: none;
     border-radius: 10px;
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 180px;
     overflow: hidden;
     box-shadow: 0 0 40px rgba(144, 13, 13, 0.5);
     transition: transform 0.3s ease;
@@ -64,14 +64,15 @@ body, html {
 
 .footer {
     background-color: #2c3e50;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     position: fixed; /* Footer'ı sayfanın altına sabitlemek için */
     bottom: 0;
     left: 0;
-    width: 100%; /* Genişliği tüm ekranı kaplar */
+    width: 100%;
+    height: 30px;/* Genişliği tüm ekranı kaplar */
     z-index: 1; /* Kar efektinin altında kalmaması için */
 }
 
@@ -131,14 +132,14 @@ body, html {
 /* Chat konteyneri sağa taşımak için stil */
 #chat-container {
     position: fixed; /* Chat alanını sabitle */
-    top: 180px; /* Sayfanın üstünden boşluk (isteğe göre ayarla) */
-    right: 270px; /* Sayfanın sağından boşluk */
-    width: 250px; /* Chat alanının genişliği */
-    height: 700px; /* Chat alanının yüksekliği */
+    top: 50px; /* Sayfanın üstünden boşluk (isteğe göre ayarla) */
+    right: 20px; /* Sayfanın sağından boşluk */
+    width: 180px; /* Chat alanının genişliği */
+    height: 550px; /* Chat alanının yüksekliği */
     background-color: #333; /* Arka plan rengi */
     color: #fff; /* Yazı rengi */
     border-radius: 8px; /* Köşeleri yuvarla */
-    padding: 15px; /* İçerik boşluğu */
+    padding: 10px; /* İçerik boşluğu */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
     overflow: hidden; /* Taşan içerikleri gizle */
   }
@@ -148,7 +149,7 @@ body, html {
     display: flex;
     align-items: center;
     background-color: #333;
-    padding: 10px;
+    padding: 5px;
   }
   
   #chat-logo {
@@ -158,7 +159,7 @@ body, html {
   }
   
   #chat-header h2 {
-    font-size: 18px;
+    font-size: 11px;
     margin: 0;
     color: #fff;
   }
@@ -199,7 +200,7 @@ body, html {
     display: flex;
     flex-direction: column; /* Mesajları alt alta sıralar */
     align-items: flex-start; /* Mesajları sola yaslar */
-    height: 400px; /* Mesaj alanı yüksekliği */
+    height: 600px; /* Mesaj alanı yüksekliği */
     overflow-y: auto; /* Kaydırma */
     background-color: #222; /* Arka plan rengi */
     padding: 10px; /* İçerik boşluğu */
@@ -212,8 +213,8 @@ body, html {
   margin-bottom: 10px; /* Mesajlar arasındaki boşluk */
   display: flex; /* İkon ve metni yan yana hizalar */
   align-items: center; /* Dikey hizalama */
-  padding: 5px; /* Genel boşluk */
-  border: 1px solid #444; /* İnce kenarlık */
+  padding: 10px; /* Genel boşluk */
+  border: 2px solid #444; /* İnce kenarlık */
   border-radius: 10px; /* Köşeleri yuvarlatır */
   background-color: #222; /* Arka plan rengi */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
@@ -233,7 +234,7 @@ body, html {
 /* Kullanıcı adı ve mesaj metni */
 .message .username {
   font-weight: bold; /* Kalın yazı */
-  font-size: 14px; /* Yazı boyutu */
+  font-size: 12px; /* Yazı boyutu */
   color: #00bcd4; /* Canlı mavi renk */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Hafif gölge */
   margin-right: 5px; /* Mesajla arasındaki boşluk */
@@ -242,7 +243,7 @@ body, html {
 
   .message span {
   font-family: "Roboto", sans-serif; /* Modern bir yazı tipi */
-  font-size: 14px; /* Yazı boyutu */
+  font-size: 13px; /* Yazı boyutu */
   line-height: 1.6; /* Satır yüksekliği */
   color: #e0e0e0; /* Hafif gri ton */
   background-color: #333; /* Arka plan rengi */
@@ -250,15 +251,15 @@ body, html {
   border-radius: 8px; /* Köşeleri yuvarlama */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Hafif gölge */
   display: inline-block; /* Kutunun genişlemesini kontrol eder */
-  margin-left: 5px; /* Kullanıcı adından sonraki boşluk */
+  margin-left: 10px; /* Kullanıcı adından sonraki boşluk */
   }
   
 /* Mesaj metni */
 .message-text .username {
-    margin-right: 100px;/* Boşluk kaldır */
+    margin-right: 10px;/* Boşluk kaldır */
     color: #fff; /* Mesaj rengi */
    
-    flex: 1; /* Mesaj metni genişlesin */
+    flex: 2; /* Mesaj metni genişlesin */
     display: inline; /* Yan yana görünsün */
   }
   
@@ -325,8 +326,8 @@ body, html {
   
   /* Chat Styles */
   #chat-container {
-    width: 400px;
-    margin: 20px auto;
+    width: 380px;
+    margin: 30px auto;
     background-color: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -371,13 +372,14 @@ body, html {
   }
   
   #chat-messages {
-    padding: 10px;
-    max-height: 400px;
+    padding: 30px;
+    height: 300px;
     overflow-y: auto;
   }
   
   #chat-new-message {
     display: flex;
+    margin-top: 0px;
     padding: 10px;
     background-color: #333;
     
@@ -412,6 +414,7 @@ body, html {
     display: flex; /* Emojileri yatay sırala */
     justify-content: space-around; /* Boşlukları eşit ayarla */
     background-color: #222; /* Arka plan rengi */
+    margin-top: 0px;
     padding: 10px; /* İç boşluk */
     border-radius: 8px; /* Köşeleri yuvarla */
     margin-bottom: 10px; /* Mesaj yazma alanı ile arası */
@@ -420,7 +423,7 @@ body, html {
   
   /* Emoji stilleri */
   .emoji {
-    font-size: 22px; /* Emoji boyutu */
+    font-size: 15px; /* Emoji boyutu */
     cursor: pointer; /* Tıklanabilir yap */
     transition: transform 0.2s ease; /* Hover animasyonu */
   }
