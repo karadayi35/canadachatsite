@@ -132,7 +132,7 @@ body, html {
 /* Chat konteyneri sağa taşımak için stil */
 #chat-container {
     position: fixed; /* Chat alanını sabitle */
-    top: 90px; /* Sayfanın üstünden boşluk (isteğe göre ayarla) */
+    top: 100px; /* Sayfanın üstünden boşluk (isteğe göre ayarla) */
     right: 20px; /* Sayfanın sağından boşluk */
     width: 180px; /* Chat alanının genişliği */
     height: 500px; /* Chat alanının yüksekliği */
